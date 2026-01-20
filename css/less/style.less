@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import 'mixin.less';
+@import '01-main.less';
+@import '06-structura.less';
+@import '02-elm.less';
+@import '02-items.less';
+@import '03-content.less';
+@import '04-inputs.less';
+@import '05-forms.less';
+@import 'common.less';
+@import 'fonts.less';
+
+/* popups */
+body.popup-open {
+	overflow: hidden;
+}
+.popup-outer-box {
+	display: none;
+	padding: 20px var(--paddingContainer);
+	animation: fadein ease 0.2s;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 100;
+	background: fade(#000, 70);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	&::-webkit-scrollbar {
+		width: 0;
+		height: 0;
+	}
+	&.active {
+		display: flex;
+	}
+}
+.popup-box {
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	flex-shrink: 0;
+	position: relative;
+	overflow: hidden;
+	width: 620px;
+	max-width: 100%;
+	max-height: inherit;
+	background-color: #fff;
+	z-index: 20;
+	padding: 60px;
+	.popup-title-wrap, .popup-footer-wrap {
+		width: 100%;
+		flex-shrink: 0;
+	}
+	.popup-content-wrap {
+		width: 100%;
+	}
+	.popup-title-wrap {
+		text-align: center;
+		font-size: 20px;
+		line-height: 1.35;
+		margin-bottom: 5px;
+	}
+	.popup-title {
+		font-size: (32/20em);
+		line-height: 1.2;
+		font-weight: 500;
+		margin-bottom: 10px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.btn-popup-close {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 2;
+	}
+}
+@media (max-width: 639px) {
+	.popup-box {
+		padding: 30px;
+		width: 360px;
+		.popup-title-wrap {
+			font-size: 16px;
+		}
+		.popup-title {
+			font-size: (28/20em);
+		}
+	}
+}
+/* end popups */

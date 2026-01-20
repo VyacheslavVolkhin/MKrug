@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/flatpickr.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <style>
+        .tile-many-lines,
+        .text-many-lines {
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+    </style>
+    <script src="./js/flatpickr.js" defer></script>
+    <script src="./js/ru.js" defer></script>
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/inputmask.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/player.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Биография</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Видеография</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Дискография</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">СМИ</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Интервью</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Фотографии</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Книги</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Общение</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Контакты</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="info-wrap">
+                            <a href="" class="btn-info">
+                                <div class="button-ico">
+                                    <img src="./img/icons/ii.svg" alt="">
+                                </div>
+                                <div class="button-title">Генерация фотографии с&nbsp;Михаилом Кругом</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box section-border">
+                <ol class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
+
+            <!--section-box-->
+            <div class="section-box section-border">
+
+                <!--title-box-->
+                <div class="title-box">
+                    <h1 class="h1-title section-title">Контакты</h1>
+                </div>
+                <!--/title-box-->
+
+                <!--contacts-box-->
+                <div class="contacts-box">
+                    <div class="info-inner-wrap">
+                        <h2 class="h1-title section-title">Пишите нам</h2>
+                        <p>Если у вас есть вопросы, напишите нам и мы ответим в ближайшее возможное время</p>
+                        <form action="/" class="form-inner-wrap">
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="text" class="form-input" placeholder="Ваше имя">
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="email" class="form-input" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <input type="tel" class="form-input" placeholder="Номер телефона">
+                                </div>
+                            </div>
+                            <div class="frm-row">
+                                <div class="frm-field">
+                                    <textarea class="form-input" placeholder="Текст сообщения"></textarea>
+                                </div>
+                            </div>
+                            <div class="frm-row-submit">
+                                <div class="frm-field field-info">
+                                    <div class="frm-select">
+                                        <input type="checkbox" id="form">
+                                        <label for="form">Даю согласие на обработку <a href="">персональных данных</a></label>
+                                    </div>
+                                </div>
+                                <div class="frm-field field-submit">
+                                    <button type="submit" class="btn">
+                                        <div class="button-title">Отправить</div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="frm-row row-info">
+                                <div class="frm-field">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/phone.svg" alt="">
+                                    </div>
+                                    <div class="field-title-wrap">
+                                        <div class="field-title">Наш телефон</div>
+                                        <div class="field-value">
+                                            <a href="tel:81231231212">+7 (123) 123-12-12</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="frm-field">
+                                    <div class="elm-ico">
+                                        <img src="./img/icons/email.svg" alt="">
+                                    </div>
+                                    <div class="field-title-wrap">
+                                        <div class="field-title">EMAIL</div>
+                                        <div class="field-value">
+                                            <a href="mailto:info@krug.ru">info@krug.ru</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="frm-field field-soc">
+                                    <a href="" class="btn-action-ico button-soc">
+                                        <img src="./img/icons/soc01.svg" alt="">
+                                    </a>
+                                    <a href="" class="btn-action-ico button-soc">
+                                        <img src="./img/icons/soc02.svg" alt="">
+                                    </a>
+                                    <a href="" class="btn-action-ico button-soc">
+                                        <img src="./img/icons/soc03.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="maps-inner-wrap">
+                        <div class="map-inner-wrap">
+                            <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+                        </div>
+                        <div class="map-outer-wrap">
+                            <div class="map-inner-wrap">
+                                <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=-eov8YMYfEHTrqs_Q1kKzkBJYs6HKSuT&width=100%25&height=100%25&lang=ru_RU&sourceType=constructor"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/contacts-box-->
+
+            </div>
+            <!--/section-box-->
+
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <!--footer-main-panel-->
+            <div class="footer-main-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="logo-inner-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="menu-inner-wrap">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Биография</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Видеография</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Дискография</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">СМИ</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Интервью</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Фотографии</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Книги</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Общение</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Контакты</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-ico">
+                                            <img src="./img/icons/ii.svg" alt="">
+                                        </div>
+                                        <div class="button-title">Генерация фотографии с&nbsp;Михаилом Кругом</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="actions-inner-wrap">
+                        <div class="soc-wrap">
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-vk.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-wa.svg" alt="">
+                            </a>
+                            <a href="" class="btn-action-ico button-soc">
+                                <img src="./img/icons/soc-tg.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="action-wrap">
+                            <a href="" class="btn">
+                                <div class="button-title">Записаться на экскурсию</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/footer-main-panel-->
+            <!--footer-bottom-panel-->
+            <div class="footer-bottom-panel cnt-section">
+                <div class="inner-wrap">
+                    <div class="support-inner-wrap">
+                        <div class="support-title">Сайт разработан при поддержке: </div>
+                        <div class="support-list">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-support">
+                                        <div class="button-title">Ольги Круг, сестры Михаила Круга</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-support">
+                                        <div class="button-title">Игоря Бобика, разработка сайта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-support">
+                                        <div class="button-title">Олега Чемисова, спонсорство проекта</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-support">
+                                        <div class="button-title">Инары, помощь с контентом </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info-inner-wrap">
+                        <div class="info-wrap">2025 © Все права защищены.</div>
+                        <div class="info-wrap">Разработано <a href="">Вебуспех</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--/footer-bottom-panel-->
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /wrap -->
+
+    <div class="popup-outer-box" id="popup-order01">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="popup-title">Оставьте заявку <br> на&nbsp;участие в&nbsp;фестивале</div>
+                <p>заполните форму, и мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            </div>
+            <div class="popup-content-wrap">
+                <form action="/" class="frm-popup">
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <input type="text" placeholder="Ваше имя" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <input type="tel" placeholder="Ваш телефон" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row">
+                        <div class="frm-field">
+                            <div class="frm-field-input">
+                                <input type="email" placeholder="Ваш email" class="form-input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frm-row-submit">
+                        <div class="frm-field">
+                            <div class="frm-select">
+                                <input type="checkbox" id="popup01">
+                                <label for="popup01">Даю согласие на обработку <a href="">персональных данных</a></label>
+                            </div>
+                        </div>
+                        <div class="frm-field">
+                            <button type="submit" class="btn button-border">Принять участие</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div><!--/popup-outer-box-->
+    <div class="popup-outer-box" id="popup-order02">
+        <div class="popup-box">
+            <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+            <div class="popup-title-wrap">
+                <div class="popup-title">Оставьте заявку <br>на участие в экскурсии</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input">
+                                    <input type="text" placeholder="Ваше имя" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input">
+                                    <input type="tel" placeholder="Ваш телефон" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input">
+                                    <input type="text" placeholder="Кол-во человек" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-input field-datepicker">
+                                    <input type="text" placeholder="Выберите желаемую дату" class="form-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup02">
+                                    <label for="popup02">Даю согласие на обработку <a href="">персональных данных</a></label>
+                                </div>
+                            </div>
+                            <div class="frm-field">
+                                <button type="submit" class="btn button-border">Принять участие</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+</body>
+
+</html>
