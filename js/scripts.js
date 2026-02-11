@@ -393,7 +393,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		const swiperEl = container.querySelector(".swiper");
 		const nextEl = container.querySelector(".button-slider-inner-next");
 		const prevEl = container.querySelector(".button-slider-inner-prev");
-		const navButtons = document.querySelectorAll('.slider-inner-nav .btn-menu');
+		
+		// Получаем data-атрибут для связи с навигацией
+		const sliderId = container.dataset.slider;
+		
+		// Находим соответствующую навигацию по data-атрибуту
+		const navContainer = document.querySelector(`.slider-inner-nav[data-slider="${sliderId}"]`);
+		const navButtons = navContainer ? navContainer.querySelectorAll('.btn-menu') : [];
 		
 		if (!swiperEl) return;
 
@@ -419,6 +425,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				}
 			}
 		});
+		
 		swiper.on('init', function() {
 			navButtons.forEach(btn => btn.classList.remove('active'));
 			if (navButtons[this.activeIndex]) {
@@ -427,14 +434,18 @@ document.addEventListener("DOMContentLoaded", function() {
 		});
 		
 		swiper.init(); 
-		navButtons.forEach((button, index) => {
-			button.addEventListener('click', function(e) {
-				e.preventDefault();
-				swiper.slideTo(index);
-				navButtons.forEach(btn => btn.classList.remove('active'));
-				this.classList.add('active');
+		
+		// Добавляем обработчики только если есть кнопки навигации
+		if (navButtons.length > 0) {
+			navButtons.forEach((button, index) => {
+				button.addEventListener('click', function(e) {
+					e.preventDefault();
+					swiper.slideTo(index);
+					navButtons.forEach(btn => btn.classList.remove('active'));
+					this.classList.add('active');
+				});
 			});
-		});
+		}
 	});
 
 
